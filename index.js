@@ -104,7 +104,7 @@ const main = async () => {
 
   // go to "My Attendance Logs"
   await page.click("text=My Attendance Logs");
-  await page.waitForSelector(`h3:text("${myName}")`);
+  await page.waitForSelector(`h1:text("My attendance log")`);
   console.log(
     "Already inside My Attendance Logs to check holiday or day-off..."
   );
